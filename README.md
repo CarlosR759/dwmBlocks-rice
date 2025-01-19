@@ -1,4 +1,5 @@
 <div align="center">
+
   # DwmBlocks
 
   ### A ***Simple*** and ***comfy*** bar.
@@ -67,6 +68,5 @@ cd dwmBlocks
 ```sh
 sudo make clean install
 ```
-
 >[!TIP]
 > - You can add more status info in the config.h file. The script should be included in the script folder to make use of the SC(route) of the config.h file.
