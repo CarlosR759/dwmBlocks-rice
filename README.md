@@ -1,15 +1,72 @@
-# dwmblocks
-Modular status bar for dwm written in c.
-# usage
-To use dwmblocks first run 'make' and then install it with 'sudo make install'.
-After that you can put dwmblocks in your xinitrc or other startup script to have it start with dwm.
-# modifying blocks
-The statusbar is made from text output from commandline programs.
-Blocks are added and removed by editing the blocks.h header file.
-By default the blocks.h header file is created the first time you run make which copies the default config from blocks.def.h.
-This is so you can edit your status bar commands and they will not get overwritten in a future update.
-# patches
-Here are some patches to dwmblocks that add features that I either don't want to merge in, or that require a dwm patch to work.
-I do not maintain these but I will take pull requests to update them.
-<br>
-<a href=https://gist.github.com/IGeraGera/e4a5583b91b3eec2e81fdceb44dea717>dwmblocks-statuscmd-b6b0be4.diff</a>
+<div align="center">
+  # DwmBlocks
+
+  ### A ***Simple*** and ***comfy*** bar.
+</div>
+
+
+This is my bar for working, which includes:
+
+  - Local ip address.
+  - cpu percentage usage.
+  - Inside Temperature [In celsius].
+  - Ram in use and total amount of ram.
+  - HDD or ssd percentage of memory used.
+  - Date calendar and time.
+
+---
+
+
+## Prerequisites
+You will need dev tools for compiling:
+
+<details>
+  <summary>Arch</summary>
+
+  ```sh
+  sudo pacman -S base base-devel 
+  ```
+</details>
+
+<details>
+  <summary>Debian/ubuntu</summary>
+
+  ```sh
+  sudo apt install build-essential 
+  ```
+  
+</details>
+
+<details>
+  <summary>RedHat/Fedora</summary>
+
+  ```sh
+  sudo dnf groupinstall "Development Tools" "Development Libraries"
+  ```
+</details>
+
+## Installation
+
+```sh
+git clone https://github.com/CarlosR759/dwmBlocks-rice.git 
+```
+
+>[!NOTE]
+> - My dwmblocks need to be inserted in a path file $HOME/programs/dwmblocks so you will need to rename your git cloned repo to match the path in the file blocks.h . You can change the path if you like but you should make sure that dwmblocks have the scripts folder, which have all the scripts to get the status info bar working.
+> - If by some case you have problems with $HOME env variable, you can replace it manually like: /home/yourUsername/programs/dwmblocks or the path that you like.
+
+
+```sh
+mv dwmBlocks-rice dwmBlocks 
+```
+
+```sh
+cd dwmBlocks
+```
+
+```sh
+sudo make clean install
+```
+
+>[!TIP]
+> - You can add more status info in the config.h file. The script should be included in the script folder to make use of the SC(route) of the config.h file.

@@ -1,0 +1,21 @@
+#Gif preview
+.github/preview.gif
+
+# Compiled binaries
+*.o
+*.exe
+
+# Dependency files
+*.d
+
+# Debugging files
+*~*
+
+# IDE-specific files
+*.project
+*.cproject
+*.settings
+*.iml
+
+# Other files
+dwmblocks
