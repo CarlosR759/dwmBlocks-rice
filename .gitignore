@@ -1,5 +1,5 @@
-#Gif preview
-.github/preview.gif
+# png preview
+.github/preview.png
 
 # Compiled binaries
 *.o
