@@ -3,7 +3,7 @@ static const Block blocks[] = {
     /*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
  /*   amixer -D pulse sset Master 5%+ */
   {" ", "ip addr show | grep wlan0 | awk 'NR==2 {print $2}'", 30, 0},
- 	{" ", "grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print int(usage) }'",   3,   0},
+	{" ", "grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print int(usage) }'",   3,   0},
 	{" ", "sensors -u | grep -m1 temp1_input | awk '{print $2}'",   3,   0},
 	{" ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
 	{" ", "df --total | grep total | awk '{print $5}'", 21600, 0},
