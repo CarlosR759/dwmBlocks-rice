@@ -5,6 +5,7 @@
   ### A ***Simple*** and ***comfy*** bar.
 </div>
 
+![Preview](/.github/preview.png)
 
 This is my bar for working, which includes:
 
